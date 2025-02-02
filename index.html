@@ -152,168 +152,27 @@
         </ul>
       </nav>
       <style>
-        main {
-          display: flex;
-          height: 3000px;
-          margin-top: 28px;
-        }
-
-        #main-left {
-          width: 830px;
-        }
-
-        #main-right {
-          margin-left: 30px;
-          width: 420px;
-        }
-
-        #main-left-ad,
-        #main-right-ad {
-          background-color: gray;
-        }
-
-        aside[id$="ad"] {
-          border-radius: 8px;
-          margin-bottom: 16px;
-        }
-
-        #main-left-ad {
-          height: 130px;
-        }
-
-        section[id^="main"] {
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
-          border-radius: 8px;
-          margin-bottom: 16px;
-        }
-
-        #main-login {
+        #main-shopping {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          flex: 1;
-          height: 164px;
-          padding: 21px 20px 18px;
-          font-size: 1.4rem;
-          line-height: 20px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          height: 560px;
+          padding: 0;
         }
 
-        #main-login-button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 380px;
-          height: 56.38px;
-
-          margin-top: 13px;
-          padding: 17px 0;
-
-          border-radius: 4px;
-          background-color: #03c75a;
-          font-size: 1.4rem;
-          color: white;
-          text-decoration: none;
-        }
-
-        #main-login-button:hover {
-          filter: brightness(0.93);
-        }
-
-        #main-login-button i {
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: 0px -301px;
-          background-repeat: no-repeat;
-          width: 72px;
-          height: 14px;
-          display: inline-block;
-          margin: 3px 8px 0 0;
-          vertical-align: top;
-        }
-
-        #main-login > div:last-of-type {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: 16px;
-          font-size: 1.3rem;
-        }
-
-        #main-login > div:last-of-type a {
-          text-decoration: none;
-          color: var(--color_caption2);
-        }
-
-        #main-login > div:last-of-type a:hover {
+        #main-shopping span:hover {
           text-decoration: underline;
         }
 
-        #main-login > div:last-of-type > a:nth-of-type(2)::before,
-        #main-login > div:last-of-type > a:nth-of-type(2)::after {
-          content: "";
-          width: 1px;
-          height: 12px;
-          display: inline-block;
-          background-color: var(--color_dot_divider);
-          margin: 4px 12px 0;
-        }
-
-        #main-right-ad {
-          height: 240px;
-        }
-
-        #main-weather,
-        #main-stock {
-          padding: 18px 0;
-        }
-
-        .main-right-header {
-          height: 52px;
-          padding: 6px 0;
-        }
-
-        #main-weather > div,
-        #main-stock > div {
-          border-top: 1px solid var(--color_border_in);
-        }
-        #main-weather {
-          height: 236px;
-        }
-
-        #main-stock {
-          height: 236px;
-        }
-
-        #main-newsstand {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-
-          height: 426.17px;
-          line-height: 10px;
-        }
-
-        #main-newsstand a {
-          text-decoration: none;
-        }
-
-        #main-newsstand a:visited {
-          color: inherit;
-        }
-
-        #main-newsstand a:hover {
-          text-decoration: underline;
-        }
-
-        #main-newsstand-header {
+        #main-shopping-header {
           display: flex;
           align-items: center;
           justify-content: flex-start;
+          position: relative;
 
           width: 100%;
-          padding: 18px 20px 17px;
+          margin: 19px 20px 16px;
 
           font-size: 1.6rem;
           line-height: 23px;
@@ -321,68 +180,12 @@
           color: rgba(8, 8, 8, 0.5);
         }
 
-        #main-newsstand-header a {
-          position: relative;
-          display: flex;
-        }
-
-        #main-newsstand .bold {
-          font-weight: bold;
-          color: black;
-        }
-
-        #main-newsstand-header .dot::before {
-          content: "";
-          display: inline-block;
-          width: 4px;
-          height: 4px;
-          background-color: #d3d5d7;
-          background-color: var(--color_dot_divider);
-          margin: 9px 7px 0;
-          border-radius: 50%;
-          vertical-align: top;
-        }
-
-        #main-newsstand-header .slash {
+        #main-shopping-header .slash {
           padding-left: 26px;
-        }
-
-        #main-newsstand-sports {
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
           position: relative;
         }
 
-        #main-newsstand-sports-span {
-          background-color: #f4361e;
-          background-color: var(--color_live_news_price);
-          display: flex;
-          margin: 3px 0 0 5px;
-          padding: 0 5px 0 4px;
-          border-radius: 9px;
-          font-size: 1.1rem;
-          line-height: 18px;
-          font-weight: 900;
-          vertical-align: top;
-          color: #fff;
-          text-decoration: none;
-        }
-
-        #main-newsstand-sports-span::before {
-          content: "";
-          display: inline-block;
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -432px -413px;
-          background-repeat: no-repeat;
-          width: 14px;
-          height: 10px;
-          margin: 4px 3px 0 0;
-          vertical-align: top;
-        }
-
-        #main-newsstand-header .slash::before {
+        #main-shopping-header .slash::before {
           content: "";
           display: block;
           position: absolute;
@@ -395,21 +198,168 @@
           transform: skewX(-15deg); /* 회전 */
         }
 
-        #main-newsstand-subheader {
+        #main-shopping-footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 57.89px;
+          border-top: 1px solid var(--color_border_in);
+          position: relative;
+          padding: 10px 0 11px;
+          line-height: 34px;
+          text-align: center;
+          box-sizing: border-box;
+          font-size: 1.3rem;
+          line-height: 35px;
+          font-weight: 600;
+        }
+
+        #main-shopping .shopping-item {
+          color: var(--color_shop);
+        }
+
+        #main-shopping-footer .total {
+          color: rgba(96, 96, 96, 0.5);
+        }
+
+        #main-shopping-footer-center {
+          display: flex;
+          padding: 0 16px;
+        }
+
+        #main-shopping-footer-prev,
+        #main-shopping-footer-next {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: center;
+          position: relative;
+          width: 36px;
+          height: 36px;
+          border: 1px solid var(--color_button_border);
+          border-radius: 50%;
+        }
+
+        #main-shopping-footer-prev:hover,
+        #main-shopping-footer-next:hover {
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        #main-shopping-footer-prev::before {
+          content: "";
+          background-image: url(/sp_main.png);
+          background-size: 452px 436px;
+          background-position: -193px -424px;
+          background-repeat: no-repeat;
+          width: 10px;
+          height: 12px;
+          margin: auto;
+          transform: rotate(180deg);
+        }
+        #main-shopping-footer-next::before {
+          content: "";
+          background-image: url(/sp_main.png);
+          background-size: 452px 436px;
+          background-position: -182px -424px;
+          background-repeat: no-repeat;
+          width: 10px;
+          height: 12px;
+        }
+
+        #main-shopping-footer-admark {
+          position: absolute;
+          top: 18px;
+          right: 20px;
+          border: 1px solid #e3e5e8;
+          border: 1px solid var(--color_border_out);
+          color: #606060;
+          color: var(--color_caption2);
+          width: 30px;
+          border-radius: 4px;
+          font-size: 1.2rem;
+          font-weight: lighter;
+          line-height: 18px;
+          text-align: center;
+        }
+
+        #main-shopping-content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 20px 1px;
+        }
+
+        #main-shopping-left {
+          width: 248px;
+          height: 375px;
+        }
+
+        #main-shopping-right {
+          display: grid;
+          align-items: flex-start;
+          justify-content: center;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          width: 522px;
+          height: 375px;
+          margin-left: 20px;
+        }
+
+        #main-shopping-right .card-nopadding {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 98px;
+        }
+
+        #main-shopping-right .card-padding {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 106px;
+          padding: 0 0 14px 8px;
+        }
+
+        #main-shopping-right .image {
+          width: 98px;
+          height: 126px;
+          border-radius: 4px;
+          overflow: hidden;
+          background-color: lightgray;
+        }
+
+        #main-shopping-right span {
+          width: 100%;
+          padding-top: 8px;
+          font-size: 1.3rem;
+          line-height: 1.7rem;
+        }
+
+        #main-shopping-todaypick {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
 
           width: 790px;
-          margin: 0 20px;
-          padding: 12px 20px;
+          height: 50px;
+          padding: 15px 20px 14px;
           background-color: var(--color_option_bg);
           border-radius: 4px;
           font-size: 1.4rem;
           line-height: 26px;
+          margin: 0 20px 18px;
         }
 
-        #main-newsstand-subheader .dot::after {
+        #main-shopping-todaypick-go {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: relative;
+        }
+
+        #main-shopping-todaypick .dot::after {
           content: "";
           display: inline-block;
           width: 3px;
@@ -421,191 +371,178 @@
           vertical-align: top;
         }
 
-        #main-newsstand-subheader .bar {
-          padding-left: 25px;
+        #main-shopping-todaypick-go a {
+          margin-left: 8px;
+          color: var(--color_caption1);
+          font-weight: 500;
         }
 
-        #main-newsstand-subheader .bar::before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 7px;
-          left: 12px;
-          width: 1px;
-          height: 12px;
+        #main-shopping-left-mall {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: -0.6px;
+          border: 1px solid var(--color_border_in);
+          border-radius: 4px;
+          padding: 9px 11px 4px;
+        }
+
+        #main-shopping-left-mall .dot {
+          width: 3px;
+          height: 3px;
           background-color: #d3d5d7;
           background-color: var(--color_dot_divider);
-        }
-
-        #main-newsstand-subheader > div {
-          display: flex;
-          position: relative;
-        }
-
-        #main-newsstand-subheader > div > a {
           display: inline-block;
-          position: relative;
-        }
-
-        #main-newsstand-subheader .select {
-          color: var(--color_caption2);
-        }
-
-        #main-newsstand-subheader .select::after {
-          content: "";
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -175px -211px;
-          background-repeat: no-repeat;
-          width: 9px;
-          height: 6px;
-          display: inline-block;
-          margin: 9px 0 0 5px;
+          border-radius: 50%;
           vertical-align: top;
         }
 
-        #main-newsstand-subheader-ani {
-          position: relative;
-          max-width: 500px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+        #main-shopping-left-mall > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-bottom: 5px;
         }
 
-        #main-newsstand-grid {
-          display: grid;
-          justify-content: center;
+        #main-shopping-left-my {
+          display: flex;
           align-items: center;
-          grid-template-rows: repeat(4, 1fr);
-          grid-template-columns: repeat(6, 1fr);
-          width: 790px;
-          height: 224.4px;
-          margin: 18px 20px;
+          justify-content: center;
+          flex: 1;
+          font-size: 13px;
+          line-height: 20px;
+          margin-top: 12px;
+          padding: 9px;
+          border: 1px solid var(--color_border_in);
           border-radius: 4px;
         }
-        #main-newsstand-grid > div {
-          display: flex;
-          text-align: center;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
-          background-color: white;
-          box-shadow: 0 0 0 1px var(--color_border_in);
-        }
-        #main-newsstand-footer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          border-top: 1px solid var(--color_border_in);
-          position: relative;
-          padding: 10px 0 11px;
-          line-height: 34px;
-          text-align: center;
-          box-sizing: border-box;
-          font-size: 1.3rem;
-          line-height: 35px;
-          font-weight: 600;
-        }
-        #main-newsstand-footer .news {
-          color: var(--color_news);
-        }
 
-        #main-newsstand-footer .total {
-          color: rgba(96, 96, 96, 0.5);
-        }
-
-        #main-newsstand-footer-center {
-          display: flex;
-          padding: 0 16px;
-        }
-
-        #main-newsstand-footer-prev,
-        #main-newsstand-footer-next {
+        #main-shopping-left-my .icon {
           display: flex;
           align-items: center;
           justify-content: center;
           position: relative;
-          width: 36px;
-          height: 36px;
-          border: 1px solid var(--color_button_border);
+          width: 32px;
+          height: 32px;
+          border: 1px solid rgba(238, 242, 248, 0.8);
           border-radius: 50%;
         }
 
-        #main-newsstand-footer-prev:hover,
-        #main-newsstand-footer-next:hover {
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-        }
-
-        #main-newsstand-footer-prev::before {
-          content: "";
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -193px -424px;
-          background-repeat: no-repeat;
-          width: 10px;
-          height: 12px;
-          margin: auto;
-          transform: rotate(180deg);
-        }
-        #main-newsstand-footer-next::before {
-          content: "";
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -182px -424px;
-          background-repeat: no-repeat;
-          width: 10px;
-          height: 12px;
-        }
-
-        #main-newsstand-footer-view {
+        #main-shopping-myshop,
+        #main-shopping-review,
+        #main-shopping-order,
+        #main-shopping-basket {
           display: flex;
-          align-items: stretch;
-          justify-content: flex-end;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 57.5px;
+        }
+
+        #main-shopping-myshop .icon::before {
+          content: "";
+          display: block;
           position: absolute;
-          right: 0px;
-          width: 98px;
-        }
-
-        #main-newsstand-footer-view .list {
-          border: none;
-          width: 49px;
-          height: 56px;
-          padding: 18px 9px 18px 20px;
-        }
-
-        #main-newsstand-footer-view .list::before {
-          content: "";
-          display: inline-block;
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -227px -376px;
+          top: 50%;
+          left: 50%;
+          width: 32px;
+          height: 32px;
+          background-image: url(/sp_main2.png);
+          background-size: 158px 137px;
           background-repeat: no-repeat;
-          width: 20px;
-          height: 20px;
+          transform: translate(-50%, -50%);
+          background-position: -34px 0;
         }
 
-        #main-newsstand-footer-view .grid {
-          border: none;
-          width: 49px;
-          height: 56px;
-          padding: 18px 20px 18px 9px;
-        }
-
-        #main-newsstand-footer-view .grid::before {
+        #main-shopping-review .icon::before {
           content: "";
-          display: inline-block;
-          background-image: url(/sp_main.png);
-          background-size: 452px 436px;
-          background-position: -432px -21px;
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          width: 32px;
+          height: 32px;
+          background-image: url(/sp_main2.png);
+          background-size: 158px 137px;
           background-repeat: no-repeat;
-          width: 20px;
-          height: 20px;
+          transform: translate(-50%, -50%);
+          background-position: -68px -34px;
         }
 
-        #main-newsstand-footer-view .list:hover::before,
-        #main-newsstand-footer-view .grid:hover::before {
-          filter: brightness(0.6);
+        #main-shopping-order .icon::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          width: 32px;
+          height: 32px;
+          background-image: url(/sp_main2.png);
+          background-size: 158px 137px;
+          background-repeat: no-repeat;
+          transform: translate(-50%, -50%);
+          background-position: -34px -34px;
+        }
+
+        #main-shopping-basket .icon::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          width: 17px;
+          height: 16px;
+          background-image: url(/sp_main2.png);
+          background-size: 158px 137px;
+          background-repeat: no-repeat;
+          transform: translate(-50%, -50%);
+          background-position: -19px -121px;
+        }
+
+        #main-shopping-left-my span {
+          margin-top: 2px;
+        }
+
+        #main-shopping-left-ad {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          margin-top: 12px;
+        }
+
+        #main-shopping-left-ad > a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width: 100%;
+        }
+
+        #main-shopping-left-ad .image {
+          width: 100%;
+          height: 146px;
+          border: 1px solid var(--color_border_in);
+          border-radius: 4px;
+          background-color: lightgray;
+        }
+
+        #main-shopping-left-ad span {
+          margin: 8px 0 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 1.3rem;
+          line-height: 19px;
         }
       </style>
       <main id="main">
@@ -687,7 +624,157 @@
               </div>
             </div>
           </section>
-          <section id="main-shopping"></section>
+          <section id="main-shopping">
+            <div id="main-shopping-header" class="main-left-header">
+              <a href="#" class="bold">쇼핑</a>
+              <a href="#" class="slash">맨즈</a>
+              <a href="#" class="slash">원쁠딜</a>
+              <a href="#" class="slash">쇼핑라이브</a>
+            </div>
+            <div id="main-shopping-content">
+              <div id="main-shopping-left">
+                <div id="main-shopping-left-mall">
+                  <div>
+                    <a href="#">
+                      <span>쿠팡</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span class="bold">G마켓</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span>옥션</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span>올리브영</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <span>11번가</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span class="bold">SSG닷컴</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span>GS SHOP</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <span class="bold">하프클럽</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span>CJ온스타일</span>
+                    </a>
+                    <span class="dot"></span>
+                    <a href="#">
+                      <span>패션플러스</span>
+                    </a>
+                  </div>
+                </div>
+                <div id="main-shopping-left-my">
+                  <div id="main-shopping-myshop">
+                    <div class="icon"></div>
+                    <span>마이쇼핑</span>
+                  </div>
+                  <div id="main-shopping-review">
+                    <div class="icon"></div>
+                    <span>리뷰적립</span>
+                  </div>
+                  <div id="main-shopping-order">
+                    <div class="icon"></div>
+                    <span>주문</span>
+                  </div>
+                  <div id="main-shopping-basket">
+                    <div class="icon"></div>
+                    <span>장바구니</span>
+                  </div>
+                </div>
+                <div id="main-shopping-left-ad">
+                  <a href="#">
+                    <div class="image"></div>
+                    <span>올해 구강관리는 워터픽으로!</span>
+                  </a>
+                </div>
+              </div>
+              <div id="main-shopping-right">
+                <div class="card-nopadding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-nopadding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+                <div class="card-padding">
+                  <div class="image"></div>
+                  <span>우리집 피부케어<br />혁신 스팟패치!</span>
+                </div>
+              </div>
+            </div>
+            <div id="main-shopping-todaypick">
+              <span class="dot bold">오늘의 혜택</span>
+              <div id="main-shopping-todaypick-go">
+                <img
+                  height="13"
+                  src="https://s.pstatic.net/shopping.phinf/20230525_14/6692a602-cfa6-42e6-b57c-fffa188195bc.jpg"
+                  alt="GSSHOP"
+                />
+                <a href="#">
+                  <span>GS SHOP이 추천하는 상품을 모아모아~</span>
+                  <span class="shopping-item">오늘의 특가!</span>
+                </a>
+              </div>
+            </div>
+            <div id="main-shopping-footer">
+              <button id="main-shopping-footer-prev">
+                <span class="blind">이전</span>
+              </button>
+              <div id="main-shopping-footer-center">
+                <span class="shopping-item">쇼핑아이템&nbsp;</span>
+                더보기&nbsp;1
+                <span class="total">/13</span>
+              </div>
+              <button id="main-shopping-footer-next">
+                <span class="blind">다음</span>
+              </button>
+              <span id="main-shopping-footer-admark">AD</span>
+            </div>
+          </section>
         </div>
         <div id="main-right">
           <section id="main-login">
